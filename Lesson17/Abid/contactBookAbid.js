@@ -278,7 +278,7 @@ function searchContact(name, email, phone) {
     console.log(`No contact found by ${searchBy.join(' and ')} where ${Object.values(searchObject).join(' and ')}`);
   }
 
-  console.log('------------------');
+  console.log('------------------'); 
 }
 
 

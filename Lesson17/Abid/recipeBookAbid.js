@@ -63,7 +63,7 @@ function deleteRecipe(title) {
 }
 
 addRecipe('Milkshake', ['Milk', 'Banana', 'Honey'], 15);
-displayAllRecipes();
+displayAllRecipes(); 
 findRecipeByIngredient('Egg');
 deleteRecipe('Omlet');
 displayAllRecipes();

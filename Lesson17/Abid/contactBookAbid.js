@@ -242,7 +242,7 @@ findContact('doe');
 
 function searchContact(name, email, phone) {
   console.log('------------------');
-  let searchObject = {};
+  const searchObject = {};
   if (name) searchObject.name = name;
   if (phone) searchObject.phone = phone;
   if (email) searchObject.email = email;

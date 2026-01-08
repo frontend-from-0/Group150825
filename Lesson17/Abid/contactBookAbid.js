@@ -260,8 +260,8 @@ function searchContact(name, email, phone) {
     let isMatch = true;
 
     for (let key in searchObject) {
-      let contactValue = currentContact[key].toLowerCase();
-      let searchValue= searchObject[key].toLowerCase();
+      const contactValue = currentContact[key].toLowerCase();
+      const searchValue= searchObject[key].toLowerCase();
       if (!contactValue.includes(searchValue)) {
         isMatch = false;
         break;

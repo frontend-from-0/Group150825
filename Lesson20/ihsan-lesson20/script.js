@@ -49,13 +49,7 @@ dateInput.addEventListener('change', function () {
 
 timeSlotContainer.addEventListener('click', function(event) {
   if (event.target.classList.contains('slot')) {
-    const button = event.target;
-    [...timeSlotButtons].forEach((button) => button.classList.remove('selected'));
-    button.classList.add('selected');
-    button.addEventListener('click', () => showSelectedTime(button));
-    selectedTime.textContent = button.textContent;
-    data.time = button.textContent;
-    
+    showSelectedTime(event.target);
     checkFormValidity();
   }
 });
@@ -67,7 +61,7 @@ timeSlotContainer.addEventListener('click', function(event) {
 bookingForm.addEventListener('submit', function (event) {
   event.preventDefault();
   
-  if (!data.date && !data.time) {
+  if (!data.date && !data.time && !data.name && !data.email) {
     return;
   }
   // bookingForm.classList.add('hidden');

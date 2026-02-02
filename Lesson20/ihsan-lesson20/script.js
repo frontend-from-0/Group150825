@@ -50,7 +50,7 @@ dateInput.addEventListener('change', function () {
 timeSlotContainer.addEventListener('click', function(event) {
   if (event.target.classList.contains('slot')) {
     const button = event.target;
-    [...timeSlotButtons].forEach((button) => btn.classList.remove('selected'));
+    [...timeSlotButtons].forEach((button) => button.classList.remove('selected'));
     button.classList.add('selected');
     button.addEventListener('click', () => showSelectedTime(button));
     selectedTime.textContent = button.textContent;

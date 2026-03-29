@@ -17,7 +17,13 @@ console.log('Ex.1', total);
 
 // 2. Declare variables userName and userAge. Log a greeting: "Hello! I am (userName) and I am (userAge) years old."
 // CODE HERE
+const userName = "Emre";
+const userAge = "30"
 
+<<<<<<< HEAD
+console.log("Hello! I am " + userName + "and I am " + userAge + "years old."   )
+
+=======
 const userName = 'Muge';
 const userAge = 28;
 
@@ -25,6 +31,7 @@ console.log(
   'Ex.2',
   'Hello! I am ' + userName + ' and I am ' + userAge + ' years old.',
 );
+>>>>>>> 8aafcdb6f007f7feebb8609b68a732e6d3a67935
 // 3. Declare variables a=10 and b=4. Log the result of a-b, a*b, and a/b.
 // CODE HERE
 
